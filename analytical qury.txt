@@ -3,3 +3,4 @@ over (partition by department_id order by department_id) as lead ,
 first_value(salary) over(partition by department_id order by department_id) as first, 
 last_value(salary) over(partition by department_id order by department_id) as last 
  from employees;
+select * from employees;
